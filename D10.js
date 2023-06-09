@@ -4,7 +4,7 @@ REGOLE
 - Se sei in difficoltà puoi chiedere aiuto a un Teaching Assistant
 - Puoi usare Google / StackOverflow ma solo quanto ritieni di aver bisogno di qualcosa che non è stato spiegato a lezione
 - Puoi testare il tuo codice in un file separato, o de-commentando un esercizio alla volta
-- Per farlo puoi utilizzare il terminale Bash, quello di VSCode o quello del tuo sistema operativo (se utilizzi macOS o Linux)
+- Per farlo puoi utilizzore il terminale Bash, quello di VSCode o quello del tuo sistema operativo (se utilizzi macOS o Linux)
 */
 
 // JS Basics
@@ -13,21 +13,21 @@ REGOLE
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 
-let sum = 10 + 20; // Crea una variabile chiamata "sum" e assegna il risultato della somma tra i valori 10 e 20
+let sum = 10 + 20; // creo una variabile chiamata "sum" e assegna il risultato della somma tra i valori 10 e 20
 console.log(sum); // Stampa il valore di "sum" sulla console,
 
 //un'altro metodo
 
 let a1 = 10; 
 let b1 = 20; 
-let sum2 = a1 + b1; // Crea una variabile chiamata "sum" e assegna il risultato della somma tra i valori di "a1" e "b1"
+let sum2 = a1 + b1; // creo una variabile chiamata "sum" e assegna il risultato della somma tra i valori di "a1" e "b1"
 console.log(sum2); // Stampa il valore di "sum" sulla console
 
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
-let randomB = Math.floor(Math.random() * 21); // Crea una variabile chiamata "randomB" e assegna un numero casuale tra 0 e 20 (inclusi)
+let randomB = Math.floor(Math.random() * 21); // creo una variabile chiamata "randomB" e assegna un numero casuale tra 0 e 20 (inclusi)
 console.log(randomB); // Stampa il valore di "randomB" sulla console
 
 /* ESERCIZIO C
@@ -35,9 +35,9 @@ console.log(randomB); // Stampa il valore di "randomB" sulla console
 */
 
 let me = {
-  name: "Alessandra Vanessa", // Assegna il valore "Alessandra Vanessa" alla proprietà "name"
-  surname: "De Guzman", // Assegna il valore "De Guzman" alla proprietà "surname"
-  age: 22 // Assegna il valore 22 alla proprietà "age"
+  name: "Alessandra Vanessa", // Assegno il valore "Alessandra Vanessa" alla proprietà "name"
+  surname: "De Guzman", // Assegno il valore "De Guzman" alla proprietà "surname"
+  age: 22 // Assegno il valore 22 alla proprietà "age"
 };
 console.log(me); // Stampa l'oggetto "me" sulla console
 
@@ -178,7 +178,7 @@ console.log(resultisThisAnEmail); // stampa il valore della variabile "result"
 
 function whatDayIsIt() { // definisce la funzione "whatDayIsIt"
   let days = ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"]; // definisce un array di stringhe con i nomi dei giorni della settimana
-  let date = new Date(); // crea un nuovo oggetto Date per ottenere la data corrente
+  let date = new Date(); // creo un nuovo oggetto Date per ottenere la data corrente
   let day = date.getDay(); // utilizzo il metodo getDay per ottenere il giorno della settimana corrente come un numero da 0 a 6
   return days[day]; // ritorna il nome del giorno della settimana corrispondente al numero ottenuto con getDay
 }
@@ -248,8 +248,8 @@ console.log(resultHowManyDays); // stampa il valore della variabile "result"
 */
 
 function isTodayMyBirthday() { // definisce la funzione "isTodayMyBirthday"
-  let today = new Date(); // crea un nuovo oggetto Date per ottenere la data corrente
-  let myBirthday = new Date(today.getFullYear(), 0, 1); // crea un nuovo oggetto Date per il tuo compleanno, impostando l'anno corrente, il mese e il giorno del tuo compleanno
+  let today = new Date(); // creo un nuovo oggetto Date per ottenere la data corrente
+  let myBirthday = new Date(today.getFullYear(), 0, 1); // creo un nuovo oggetto Date per il tuo compleanno, impostando l'anno corrente, il mese e il giorno del tuo compleanno
   if (today.getMonth() === myBirthday.getMonth() && today.getDate() === myBirthday.getDate()) { // controlla se il mese e il giorno della data corrente corrispondono al mese e al giorno del tuo compleanno
     return true; // se oggi è il tuo compleanno, ritorna true
   } else {
@@ -280,8 +280,8 @@ function deleteProp(obj, prop) {
 const myObj = { a: 1, b: 2, c: 3 };
 console.log(deleteProp(myObj, 'b')); // { a: 1, c: 3 }
 
-
-// array movies
+// array movies - ho copiato l'array senza modificarlo e l'ho incollato prima degli esercizi; mi usciva l'errore in console log "D10.js:305 Uncaught ReferenceError: Cannot access 'movies' before initialization" e non mi uscivano gli output per gli esercizi che utilizzavano l'array movies.
+//l'ho spostato sopra per verificare se il codice funzionava. 
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -439,12 +439,12 @@ console.log(countMovies()); // 14
 
 
 /* ESERCIZIO 14
-  Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
+  Scrivi una funzione chiamata "onlyTheYears" che creo un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
 
 // Definizione della funzione "onlyTheYears"
 function onlyTheYears() {
-  // Crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies"
+  // creo un array con solamente gli anni di uscita dei film contenuti nell'array "movies"
   const years = movies.map((movie) => movie.Year);
   // Ritorna l'array creato
   return years;
@@ -511,14 +511,14 @@ console.log(searchByTitle('lord of the rings'));
 
 // Definizione della funzione "searchAndDivide"
 function searchAndDivide(title) {
-  // Crea un oggetto contenente due array: "match" e "unmatch"
+  // creo un oggetto contenente due array: "match" e "unmatch"
   const result = {
     match: [],
     unmatch: [],
   };
   // Itera sull'array "movies"
   movies.forEach((movie) => {
-    // Verifica se il titolo del film corrente contiene la stringa fornita come parametro
+    // verifico se il titolo del film corrente contiene la stringa fornita come parametro
     if (movie.Title.toLowerCase().includes(title.toLowerCase())) {
       // Se il titolo del film corrente contiene la stringa fornita, aggiungi il film all'array "match"
       result.match.push(movie);
@@ -550,7 +550,7 @@ resultsearchAndDivide.unmatch.forEach((movie) => console.log(movie.Title));
 
 // Definizione della funzione removeIndex
 function removeIndex(index) {
-  // Crea una copia dell'array movies
+  // creo una copia dell'array movies
   let newMovies = [...movies];
   // Rimuovi l'elemento all'indice specificato dall'array newMovies
   newMovies.splice(index, 1);
@@ -570,7 +570,7 @@ console.log(resultRemoveIndex);
 
 // Definizione della funzione selectContainer
 function selectContainer() {
-  // Seleziona l'elemento con id "container" utilizzando il metodo getElementById
+  // Seleziono l'elemento con id "container" utilizzondo il metodo getElementById
   let container = document.getElementById("container");
   // Ritorna l'elemento selezionato
   return container;
@@ -588,7 +588,7 @@ console.log(containerElement);
 
 // Definizione della funzione selectTdElements
 function selectTdElements() {
-  // Seleziona tutti gli elementi <td> utilizzando il metodo getElementsByTagName
+  // Seleziono tutti gli elementi <td> utilizzondo il metodo getElementsByTagName
   let tdElements = document.getElementsByTagName("td");
   // Ritorna la lista di elementi selezionati
   return tdElements;
@@ -606,9 +606,9 @@ console.log(tdList);
 
 // Definizione della funzione printTdText
 function printTdText() {
-  // Seleziona tutti gli elementi <td> utilizzando il metodo getElementsByTagName
+  // Seleziono tutti gli elementi <td> utilizzondo il metodo getElementsByTagName
   let tdElements = document.getElementsByTagName("td");
-  // Utilizza un ciclo for per iterare su tutti gli elementi <td>
+  // utilizzo un ciclo for per iterare su tutti gli elementi <td>
   for (let i = 0; i < tdElements.length; i++) {
     // Stampa il testo contenuto nell'elemento <td> corrente
     console.log(tdElements[i].textContent);
@@ -625,9 +625,9 @@ printTdText();
 
 // Definizione della funzione addRedBackgroundToLinks
 function addRedBackgroundToLinks() {
-  // Seleziona tutti gli elementi <a> utilizzando il metodo getElementsByTagName
+  // Seleziono tutti gli elementi <a> utilizzondo il metodo getElementsByTagName
   let links = document.getElementsByTagName("a");
-  // Utilizza un ciclo for per iterare su tutti gli elementi <a>
+  // utilizzo un ciclo for per iterare su tutti gli elementi <a>
   for (let i = 0; i < links.length; i++) {
     // Aggiungi uno stile CSS per impostare il background di colore rosso all'elemento <a> corrente
     links[i].style.backgroundColor = "red";
@@ -644,9 +644,9 @@ addRedBackgroundToLinks();
 
 // Definizione della funzione addElementToMyList
 function addElementToMyList() {
-  // Seleziona l'elemento con id "myList" utilizzando il metodo getElementById
+  // Seleziono l'elemento con id "myList" utilizzondo il metodo getElementById
   let myList = document.getElementById("myList");
-  // Crea un nuovo elemento <li>
+  // creo un nuovo elemento <li>
   let newLi = document.createElement("li");
   // Imposta il testo dell'elemento <li>
   newLi.textContent = "Nuovo elemento";
@@ -664,9 +664,9 @@ addElementToMyList();
 
 // Definizione della funzione clearMyList
 function clearMyList() {
-  // Seleziona l'elemento con id "myList" utilizzando il metodo getElementById
+  // Seleziono l'elemento con id "myList" utilizzondo il metodo getElementById
   let myList = document.getElementById("myList");
-  // Utilizza un ciclo while per rimuovere tutti gli elementi figli della lista non ordinata
+  // utilizzo un ciclo while per rimuovere tutti gli elementi figli della lista non ordinata
   while (myList.firstChild) {
     myList.removeChild(myList.firstChild);
   }
@@ -681,11 +681,11 @@ clearMyList();
 
 // Definizione della funzione addTestClassToTr
 function addTestClassToTr() {
-  // Seleziona tutti gli elementi <tr> utilizzando il metodo getElementsByTagName
+  // Seleziono tutti gli elementi <tr> utilizzondo il metodo getElementsByTagName
   let trElements = document.getElementsByTagName("tr");
-  // Utilizza un ciclo for per iterare su tutti gli elementi <tr>
+  // utilizzo un ciclo for per iterare su tutti gli elementi <tr>
   for (let i = 0; i < trElements.length; i++) {
-    // Aggiungi la classe CSS "test" all'elemento <tr> corrente utilizzando il metodo classList.add
+    // Aggiungi la classe CSS "test" all'elemento <tr> corrente utilizzondo il metodo classList.add
     trElements[i].classList.add("test");
   }
 }
@@ -697,7 +697,7 @@ addTestClassToTr();
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
-  Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
+  creo una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
 
   Esempio:
   halfTree(3)
@@ -713,9 +713,9 @@ addTestClassToTr();
 // Definizione della funzione halfTree
 
 function halfTree(height) {
-  // Utilizza un ciclo for per iterare su ogni livello dell'albero
+  // utilizzo un ciclo for per iterare su ogni livello dell'albero
   for (let i = 1; i <= height; i++) {
-    // Crea una stringa di "*" lunga quanto il livello corrente
+    // creo una stringa di "*" lunga quanto il livello corrente
     let stars = "*".repeat(i);
     // Stampa la stringa di "*" sulla console
     console.log(stars);
@@ -742,11 +742,11 @@ halfTree(3);
 
 // Definizione della funzione tree
 function tree(height) {
-  // Utilizza un ciclo for per iterare su ogni livello dell'albero
+  // utilizzo un ciclo for per iterare su ogni livello dell'albero
   for (let i = 1; i <= height; i++) {
     // Calcola il numero di spazi da stampare prima degli asterischi
     let spaces = " ".repeat(height - i);
-    // Crea una stringa di "*" lunga il doppio del livello corrente meno uno
+    // creo una stringa di "*" lunga il doppio del livello corrente meno uno
     let stars = "*".repeat(i * 2 - 1);
     // Stampa la stringa di spazi e "*" sulla console
     console.log(spaces + stars);
@@ -764,14 +764,14 @@ tree(3);
 
 // Definizione della funzione isItPrime
 function isItPrime(num) {
-  // Verifica se il numero è minore o uguale a 1
+  // verifico se il numero è minore o uguale a 1
   if (num <= 1) {
     // Se il numero è minore o uguale a 1, non è un numero primo
     return false;
   }
-  // Utilizza un ciclo for per verificare se il numero è divisibile per un numero compreso tra 2 e la radice quadrata del numero
+  // utilizzo un ciclo for per verificare se il numero è divisibile per un numero compreso tra 2 e la radice quadrata del numero
   for (let i = 2; i <= Math.sqrt(num); i++) {
-    // Verifica se il numero è divisibile per i
+    // verifico se il numero è divisibile per i
     if (num % i === 0) {
       // Se il numero è divisibile per i, non è un numero primo
       return false;
@@ -789,6 +789,7 @@ console.log(resultIsItPrime);
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
+// *
 const movies2 = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',

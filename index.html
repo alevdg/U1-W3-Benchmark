@@ -9,6 +9,45 @@
   <body>
     <h1>Unita 1 - Week 3 - Benchmark</h1>
     <p>Alessandra Vanessa De Guzman</p>
+    <br />
+    <h1>Test Funzioni</h1>
+    <h2>Elemento Container</h2>
+    <div id="container">Elemento container</div>
+    <h2>Table con td Elements</h2>
+    <table>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </table>
+
+    <h2>Lista con id "myList"</h2>
+    <ul id="myList">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+    <h2>Links</h2>
+    <a href="#">Link 1</a><br />
+    <a href="#">Link 2</a><br />
+    <a href="#">Link 3</a><br />
+    <!-- script js -->
     <script src="D10.js"></script>
+    <!-- esempio per utilizzo delle funzioni -->
+    <script>
+      console.log("Container element:", selectContainer());
+      console.log("td elements:", selectTdElements());
+      console.log("Printing text content of td elements:");
+      printTdText();
+      addRedBackgroundToLinks();
+      addElementToMyList();
+      clearMyList();
+      addTestClassToTr();
+    </script>
   </body>
 </html>
